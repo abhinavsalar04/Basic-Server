@@ -17,6 +17,10 @@ app.get("/login", (req, res) => {
   res.send("Welcome to the login page!")
   })
 
+app.get("/json", (req, res) => {
+  res.json({ message: "Hello, JSON!" })
+})
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 })
